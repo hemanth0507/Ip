@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bus Ticket Reservation System</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9;">
+    <header style="text-align: center; background: #004080; color: white; padding: 20px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/61/61205.png" alt="Bus Logo" width="60" style="vertical-align: middle" />
+      <h1 style="display: inline; margin-left: 10px">Bus Ticket Reservation System</h1>
+      <nav style="margin-top: 10px">
+        <a href="#tickets" style="color: white; margin: 0 15px; text-decoration: none">Available Tickets</a>
+        <a href="#details" style="color: white; margin: 0 15px; text-decoration: none">Event Details</a>
+        <a href="#reservation" style="color: white; margin: 0 15px; text-decoration: none">Reservation</a>
+      </nav>
+    </header>
+
+    <section id="tickets" style="padding: 20px">
+      <h2 style="color: #004080">Available Tickets</h2>
+      <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; background: white">
+        <thead style="background: #004080; color: white">
+          <tr>
+            <th>Bus</th>
+            <th>Route</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Seats</th>
+            <th>Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="Bus" width="40" /></td>
+            <td>Chennai → Bangalore</td>
+            <td>10-Aug-2025</td>
+            <td>07:00 AM</td>
+            <td>25</td>
+            <td>600</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="Bus" width="40" /></td>
+            <td>Hyderabad → Chennai</td>
+            <td>12-Aug-2025</td>
+            <td>09:00 PM</td>
+            <td>18</td>
+            <td>750</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="Bus" width="40" /></td>
+            <td>Bangalore → Coimbatore</td>
+            <td>15-Aug-2025</td>
+            <td>06:30 AM</td>
+            <td>30</td>
+            <td>550</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="details" style="padding: 20px; background: #eef5ff">
+      <h2 style="color: #004080">Event / Journey Details</h2>
+      <p>Travel with comfort and safety! Every journey includes:</p>
+      <ul>
+        <li>Comfortable push-back seats</li>
+        <li>Free WiFi & Charging ports</li>
+        <li>Complimentary refreshments</li>
+        <li>Professional drivers with 10+ years experience</li>
+      </ul>
+    </section>
+
+    <section id="reservation" style="padding: 20px">
+      <h2 style="color: #004080">Make a Reservation</h2>
+      <form style="background: white; padding: 20px; border-radius: 8px; width: 60%; margin: auto; box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin: 5px 0" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin: 5px 0" /><br /><br />
+
+        <label for="route">Select Route:</label><br />
+        <select id="route" name="route" required style="width: 100%; padding: 8px; margin: 5px 0">
+          <option value="Chennai-Bangalore">Chennai → Bangalore</option>
+          <option value="Hyderabad-Chennai">Hyderabad → Chennai</option>
+          <option value="Bangalore-Coimbatore">Bangalore → Coimbatore</option>
+        </select><br /><br />
+
+        <label for="seats">Number of Seats:</label><br />
+        <input type="number" id="seats" name="seats" min="1" max="10" required style="width: 100%; padding: 8px; margin: 5px 0" /><br /><br />
+
+        <button type="submit" style="background: #004080; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Reserve Now</button>
+      </form>
+    </section>
+
+    <footer style="text-align: center; background: #004080; color: white; padding: 10px; margin-top: 20px;">
+      <p>&copy; 2025 Bus Ticket Reservation System | Designed for Easy Travel</p>
+    </footer>
+  </body>
+</html>
